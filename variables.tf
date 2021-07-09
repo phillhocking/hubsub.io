@@ -46,13 +46,13 @@ variable "develop_environment_variables" {
 }
 
 variable "master_backend_environment_enabled" {
-  default     = false
+  default     = true
   type        = bool
   description = "Whether to create the backend environment for master or not."
 }
 
 variable "develop_backend_environment_enabled" {
-  default     = false
+  default     = true
   type        = bool
   description = "Whether to create the backend environment for develop or not."
 }
