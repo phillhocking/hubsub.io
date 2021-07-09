@@ -1,3 +1,15 @@
+variable "aws_region" {
+  type        = string
+  default     = "us-west-2"
+}
+
+variable "access_key" {
+  type        = string
+}
+
+variable "secret_key" {
+  type        = string
+
 variable "organization" {
   type        = string
   description = "The GitHub organization or user where the repo lives."
