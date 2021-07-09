@@ -58,7 +58,7 @@ variable "develop_backend_environment_enabled" {
 }
 
 variable "master_branch_name" {
-  default     = "master"
+  default     = "main"
   type        = string
   description = "The name of the 'master'-like branch that you'd like to use."
 }
@@ -120,7 +120,7 @@ variable "develop_pull_request_preview" {
 }
 
 variable "domain_name" {
-  default     = ""
+  default     = "hubsub.io"
   type        = string
   description = "The Custom Domain Name to associate with this Amplify App."
 }
