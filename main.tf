@@ -20,6 +20,10 @@ module "develop_branch_label" {
   context = module.this.context
 }
 
+module "route53" {
+  source  = "./route53"
+}
+
 data "aws_iam_policy_document" "assume_role" {
   count = module.this.enabled && var.amplify_service_role_enabled ? 1 : 0
 
@@ -121,11 +125,6 @@ resource "aws_amplify_domain_association" "this" {
   sub_domain {
     branch_name = aws_amplify_branch.master.branch_name
     prefix      = "www"
-  }
-
-  sub_domain {
-    branch_name = aws_amplify_branch.master.branch_name
-    prefix      = "master"
   }
 
   sub_domain {

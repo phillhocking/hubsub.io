@@ -26,3 +26,4 @@ resource "aws_route53_record" "www_cname" {
   type    = "CNAME"
   ttl     = "300"
   records = ["${var.domain_name}."]
+}
