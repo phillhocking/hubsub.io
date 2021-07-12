@@ -1,11 +1,19 @@
+#terraform
+# Compiled files
+*.tfstate
+*.tfstate.backup
+
+# Module directory/lock file
+.terraform*
+
 #amplify
-hubsub-app/\#current-cloud-backend
-hubsub-app/.config/local-*
-hubsub-app/logs
-hubsub-app/mock-data
-hubsub-app/backend/amplify-meta.json
-hubsub-app/backend/awscloudformation
-hubsub-app/backend/.temp
+amplify/\#current-cloud-backend
+amplify/.config/local-*
+amplify/logs
+amplify/mock-data
+amplify/backend/amplify-meta.json
+amplify/backend/awscloudformation
+amplify/backend/.temp
 build/
 dist/
 node_modules/
@@ -17,11 +25,3 @@ amplify-build-config.json
 amplify-gradle-config.json
 amplifytools.xcconfig
 .secret-*
-
-#terraform 
-# Compiled files
-*.tfstate
-*.tfstate.backup
-
-# Module directory/lock file
-.terraform*

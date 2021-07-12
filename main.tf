@@ -23,7 +23,7 @@ module "develop_branch_label" {
 module "route53" {
   source            = "./route53"
   domain            = var.domain_name
-  cloudfront-dist   = aws_amplify_domain_association.this[*].sub_domain.dns_record
+  cloudfront-dist   = aws_amplify_domain_association.this[0].sub_domain.dns_record
 }
 
 data "aws_iam_policy_document" "assume_role" {

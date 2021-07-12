@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-hubsubio-dev-114925-authRole",
+      "UnauthRoleArn": "arn:aws:iam::280517587688:role/amplify-hubsubio-dev-114925-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::280517587688:role/amplify-hubsubio-dev-114925-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-hubsubio-dev-114925-deployment",
+      "UnauthRoleName": "amplify-hubsubio-dev-114925-unauthRole",
+      "StackName": "amplify-hubsubio-dev-114925",
+      "StackId": "arn:aws:cloudformation:us-west-2:280517587688:stack/amplify-hubsubio-dev-114925/e2dc9b60-e341-11eb-a9bc-02fb42d5cf4b",
+      "AmplifyAppId": "duelqlvs2193q"
+    }
+  }
+}
